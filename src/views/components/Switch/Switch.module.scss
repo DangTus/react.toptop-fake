@@ -1,0 +1,48 @@
+.wrapper {
+    --switch-wrapper-width: 44px;
+    --switch-icon-width: 20px;
+    --switch-padding: 2px;
+}
+
+.switch-wrapper,
+.switch-icon {
+    border-radius: 999px;
+}
+
+.switch-wrapper {
+    width: var(--switch-wrapper-width);
+    height: calc(var(--switch-icon-width) + 2 * var(--switch-padding));
+    position: relative;
+    overflow: visible;
+
+    &.on {
+        background-color: rgb(11, 224, 155);
+        transition: all 0.4s ease;
+    }
+
+    &.off {
+        background-color: rgba(22, 24, 35, 0.12);
+        transition: all 0.4s ease;
+    }
+}
+
+.switch-icon {
+    display: inline-block;
+    width: var(--switch-icon-width);
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+
+    &.on {
+        left: calc(100% - var(--switch-padding) - var(--switch-icon-width));
+        transition: all 0.4s ease;
+    }
+
+    &.off {
+        left: var(--switch-padding);
+        transition: all 0.4s ease;
+    }
+}

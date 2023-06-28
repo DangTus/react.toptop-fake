@@ -1,0 +1,28 @@
+.menu-item-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 8px 10px 16px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.menu-item {
+    width: 100%;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 600;
+
+    i {
+        min-width: 25px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.6rem;
+        line-height: 22px;
+    }
+}

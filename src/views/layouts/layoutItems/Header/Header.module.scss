@@ -1,0 +1,35 @@
+.wrapper {
+    --text-dark: #161823;
+    --search-height: 46px;
+    --search-radius: 92px;
+    --search-border-size: 1.5px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+}
+
+.inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 24px 0 16px;
+}
+
+#logo {
+    width: 300px;
+    height: 42px;
+
+    a {
+        width: fit-content;
+        height: 100%;
+        display: block;
+    }
+}
